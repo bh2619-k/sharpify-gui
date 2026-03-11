@@ -43,7 +43,7 @@ Sharpify GUI is a professional-grade tool designed to upscale images and videos 
 
 ```bash
 # Clone the repository
-git clone https://github.com/uikraft-hub/sharpify-gui.git
+git clone https://github.com/bh2619-k/sharpify-gui.git
 
 # Navigate to the project directory
 cd sharpify-gui
@@ -70,18 +70,21 @@ The application window will open, and you can start using it.
 ### Main Interface Components
 
 #### 1. Left Panel
+
 - **Input Files**: Add files and folders to the processing queue. You can also drag and drop files here.
 - **Output Settings**: Select the folder where the upscaled files will be saved.
 - **Quick Settings**: Quickly select the upscaling model.
 - **Controls**: Start/stop the upscaling process and access advanced settings.
 
 #### 2. Right Panel
+
 - **Progress**: View the progress of the current file and the overall batch.
 - **Processing Log**: See detailed, timestamped logs of the upscaling process.
 
 ## Supported File Types
 
 ### Image Formats
+
 - JPG
 - JPEG
 - PNG
@@ -90,6 +93,7 @@ The application window will open, and you can start using it.
 - WebP
 
 ### Video Formats
+
 - MP4
 - AVI
 - MKV
@@ -100,16 +104,20 @@ The application window will open, and you can start using it.
 ## Upscaling Options
 
 ### Model Selection
+
 You can choose from the following Real-ESRGAN models:
--   **Anime Image/Video 4x**: Optimized for upscaling anime-style images and videos.
--   **General Image/Video 4x**: A general-purpose model for all other types of images and videos.
--   **Anime Photos 4x**: A model specifically for anime-style photos.
+
+- **Anime Image/Video 4x**: Optimized for upscaling anime-style images and videos.
+- **General Image/Video 4x**: A general-purpose model for all other types of images and videos.
+- **Anime Photos 4x**: A model specifically for anime-style photos.
 
 ### Output Format
+
 For images, you can choose the output format:
--   **JPG**: Good for photos, smaller file size.
--   **PNG**: Lossless format, good for graphics.
--   **WebP**: Modern format with good compression.
+
+- **JPG**: Good for photos, smaller file size.
+- **PNG**: Lossless format, good for graphics.
+- **WebP**: Modern format with good compression.
 
 Videos are output in the same format as the input file.
 
@@ -118,39 +126,49 @@ Videos are output in the same format as the input file.
 You can access the advanced settings by clicking the "Advanced Settings" button.
 
 ### AI Model Settings
--   **Model**: Select the Real-ESRGAN model to use.
+
+- **Model**: Select the Real-ESRGAN model to use.
 
 ### Performance Settings
--   **Use GPU Acceleration**: Enable or disable GPU usage.
--   **Tile Size**: Controls GPU memory usage. Lower values use less memory but are slower.
+
+- **Use GPU Acceleration**: Enable or disable GPU usage.
+- **Tile Size**: Controls GPU memory usage. Lower values use less memory but are slower.
 
 ### Video Processing Settings
--   **Output FPS**: Set the frames per second for the output video.
--   **Video Quality (CRF)**: Control the quality of the output video. Lower values mean higher quality and larger file sizes.
+
+- **Output FPS**: Set the frames per second for the output video.
+- **Video Quality (CRF)**: Control the quality of the output video. Lower values mean higher quality and larger file sizes.
 
 ### Output Format Settings
--   **Image Format**: Choose the output format for upscaled images.
+
+- **Image Format**: Choose the output format for upscaled images.
 
 ## Troubleshooting
 
 ### Common Issues and Solutions
 
 #### Application does not start
+
 **Possible Causes:**
+
 - Missing dependencies.
 - Python is not installed correctly.
 
 **Solutions:**
+
 1.  Make sure you have installed all the dependencies from `requirements.txt`.
 2.  Ensure you are using a supported version of Python.
 
 #### Upscaling fails
+
 **Possible Causes:**
+
 - The input file is corrupted.
 - The selected model is not compatible with the input file.
 - Insufficient GPU memory.
 
 **Solutions:**
+
 1.  Try a different input file.
 2.  Try a different upscaling model.
 3.  If using GPU, try reducing the tile size in the advanced settings.
@@ -158,11 +176,13 @@ You can access the advanced settings by clicking the "Advanced Settings" button.
 ## Best Practices
 
 ### Performance Optimization
+
 - Use GPU acceleration for the best performance.
 - Adjust the tile size based on your GPU's memory.
 - Process files in batches to save time.
 
 ### File Management
+
 - Organize your input and output files in separate folders.
 - Use the "Clear All" button to clear the file queue before starting a new batch.
 
@@ -173,9 +193,11 @@ The application is not designed to be used as a library, but the core logic is c
 ### Core Classes
 
 #### `app.main_window.AnimeUpscalerGUI`
+
 The main application window.
 
 #### `app.workers.UpscaleWorker`
+
 Handles the upscaling process in a separate thread.
 
 ## FAQ
@@ -195,11 +217,3 @@ A: Currently, you can only use the models included with the application.
 
 **Q: Where are the upscaled files saved?**
 A: You can select the output folder using the "Select Output Folder" button.
-
-## 📞 Support
-
-- **📧 Email**: [ujjwalkrai@gmail.com](mailto:ujjwalkrai@gmail.com)
-- **🐛 Issues**: [Repository Issues](https://github.com/uikraft-hub/sharpify-gui/issues)
-- **🔓 Security**: [Repository Security](https://github.com/uikraft-hub/sharpify-gui/security)
-- **⛏ Pull Requests**: [Repository Pull Requests](https://github.com/uikraft-hub/sharpify-gui/pulls)
-- **📖 Documentation**: [Repository Documentation](https://github.com/uikraft-hub/sharpify-gui/tree/main/docs)

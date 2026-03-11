@@ -45,14 +45,12 @@ coverage.xml
 *.spec
 
 # Virtual environments
-.env
 .venv
 env/
 venv/
 
 # Editor/IDE configurations
 .idea/
-.vscode/
 *.sublime-project
 *.sublime-workspace
 
@@ -65,3 +63,5 @@ Thumbs.db
 
 # Temporary files
 *.tmp
+config.bat
+node_modules

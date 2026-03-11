@@ -1,9 +1,9 @@
 """
 Project: sharpify-gui
-Author: ukr
+Author: bh2619-k
 Version: 1.0.0
 License: MIT
-Repository: https://github.com/uikraft-hub/sharpify-gui
+Repository: https://github.com/bh2619-k/sharpify-gui
 """
 
 import sys
@@ -21,7 +21,7 @@ def main():
     app = QApplication(sys.argv)
     app.setApplicationName("sharpify-gui")
     app.setApplicationVersion("1.0.0")
-    app.setOrganizationName("UKR-PROJECTS")
+    app.setOrganizationName("bh2619-k")
 
     icon_path = "favicon.ico"
     if os.path.exists(icon_path):
